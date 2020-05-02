@@ -71,11 +71,12 @@ export const CurrentQuestion = () => {
 }
 
 const Question = styled.h1`
+  display: flex; 
+  flex-direction:column, 
   color: #75a086;
   font-size: 36px;
   text-align: center;
 `
-const Option = styled.label``
 
 const OptionInput = styled.input`
   display:inline-block;
