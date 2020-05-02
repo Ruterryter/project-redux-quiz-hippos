@@ -27,4 +27,7 @@ const QuizButton = styled.button`
   background-color: #f8e3c8;
   text-align:center;
   transition: all 0.2s;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 `
