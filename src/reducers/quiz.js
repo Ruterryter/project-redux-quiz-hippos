@@ -1,6 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit'
 
-// Change these to your own questions!
+
 const questions = [
   { id: 1, questionText: 'What is linguine?', options: ['Pasta', 'Sausage', 'Scallop', 'Sauce'], correctAnswerIndex: 0 },
   { id: 2, questionText: '🍾Champagne is to sparkling wine what tequila is to...', options: ['Mezcal', 'Sotol', 'Raicilla', 'Pulque'], correctAnswerIndex: 0 },
@@ -60,13 +60,7 @@ export const quiz = createSlice({
       })
     },
 
-    /**
-     * Use this action to progress the quiz to the next question. If there's
-     * no more questions (the user was on the final question), set `quizOver`
-     * to `true`.
-     *
-     * This action does not require a payload.
-     */
+   
     goToNextQuestion: (state) => {
       if (state.currentQuestionIndex + 1 === state.questions.length) {
         state.quizOver = true
@@ -75,13 +69,7 @@ export const quiz = createSlice({
       }
     },
 
-    /**
-     * Use this action to reset the state to the initial state the page had
-     * when it was loaded. Who doesn't like re-doing a quiz when you know the
-     * answers?!
-     *
-     * This action does not require a payload.
-     */
+  
     restart: () => {
       return initialState
     }
